@@ -1,0 +1,1018 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+    font-size: 1.4em;
+}
+
+/*========== General Styles ==========*/
+* {
+margin: 0;
+padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+a {
+    text-decoration: none;
+    outline: 0 none;
+}
+
+h1 {
+  font-family: Avenir-Heavy;
+  font-size: 60px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  line-height: 1.02em;
+  margin-top: 50px;
+}
+
+h2 {
+  font-family: Avenir-Black;
+  font-size: 34px;
+  color: #5F5F5F;
+  letter-spacing: 0.94px;
+  line-height: 1.35em;
+  text-align: center;
+}
+
+h3 {
+  font-family: Avenir-Black;
+  font-size: 18px;
+  color: #5F5F5F;
+  letter-spacing: 0.5px;
+  line-height: 1.39em;
+}
+
+h4 {
+  font-family: Avenir-Black;
+  font-size: 22px;
+  color: #5F5F5F;
+  letter-spacing: 0.61px;
+  line-height: 1.36em;
+}
+
+h5 {
+  font-family: Avenir-Book;
+  font-size: 12px;
+  color: #4A4A4A;
+  letter-spacing: 0.33px;
+  line-height: 1.33em;
+}
+
+button {
+    font-family: NeutrafaceTextBook;
+    font-size: 16px;
+    color: #4596D1;
+    border: 2px solid #4596D1;
+    letter-spacing: 2px;
+    /*line-height: 1.19em;*/
+    height: 61px;
+    width: 204px;
+    background-color: transparent;
+    border-radius: 500px;
+    margin-top: 20px;
+    outline: 0 none;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+button:hover {
+    border: 2px solid #4596D1;
+    background-color: #4596D1;
+    color: white;
+}
+
+#assignmentHeading hr {
+    border: 1px #D1DE23 solid;
+    position: relative;
+    top: 0px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+#submissionsHeading hr {
+    border: 1px #D1DE23 solid;
+    position: relative;
+    top: 0px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+/*========== Hidden Section ==========*/
+
+#thanks {
+    display: none;
+    min-height: 100%;
+    height: auto;
+}
+
+/*========== Landing Section ==========*/
+
+#landing {
+    /*position: relative;*/
+    min-height: 100%;
+    background-size: cover;
+    z-index: -1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #7c7c7c;
+}
+
+video {
+    position: absolute; 
+    right: 0; 
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: 0;
+    background-size: cover;
+}
+
+.mobileImage {
+    display: none;
+}
+
+p { margin: $spacing 0; padding: 0; }
+
+@keyframes caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.scene {
+  font-size: 240%;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.saying:after {
+  content: "|";
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 1;
+  animation: caret 500ms infinite;
+}
+
+#landingContent {
+    margin-top: 5vw;
+    z-index: 1;
+}
+
+#landing button {
+  float: left;
+  clear: both;
+  margin-left: 10px;
+  color: white
+}
+
+#landing button:hover {
+    border: 2px solid #4596D1;
+    background-color: #4596D1;
+    color: white;
+}
+
+#landing p {
+  font-family: Avenir-Medium;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.87px;
+  line-height: 1.21em;
+}
+
+#arrowText {
+    opacity: 0;
+    position: relative;
+    color: white;
+    bottom: -15px;
+    font-family: Avenir-Book;
+    font-size: 12px;
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+.scrollArrow {
+    position: absolute;
+    left: 47%;
+    bottom: 40px;
+}
+
+.scrollArrow:hover #arrowText {
+    opacity: 1;
+    bottom: 0px;
+}
+
+.scrollArrow a {
+    color: white;
+    font-family: Avenir-Book;
+    font-size: 12px;
+}
+
+.scrollArrow img {
+    margin: 5px 0;
+    position: absolute;
+    left: 15px;
+}
+
+/*========== Assignment Section ==========*/
+#assignment  {
+    /* min-height: 100%; */
+    max-height: 900px;
+    background-color: white;
+}
+
+#assignmentHeading {
+    padding-top: 8%;
+}
+
+#assignmentContent {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+#assignment h3 {
+    padding: 50px 80px 10px;
+    text-align: center;
+}
+
+hr {
+    border: 1px #7C7E7D solid;
+    position: relative;
+    top: 30px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#assignment h5 {
+    font-family: Avenir-Book;
+    line-height: 17px;
+    letter-spacing: .88px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#assignmentHeading h5 {
+    font-family: Avenir-Book;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    line-height: 1.33em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+}
+
+#assignmentHeading h5 span {
+    color: #4596D1;
+}
+
+#assignmentContent p {
+    padding: 0 40px;
+    font-family: Avenir-Book;
+    line-height: 19px;
+    letter-spacing: .88px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#assignmentContent p span {
+    color: #4596D1;
+}
+
+#assignmentContent p span:hover {
+    background-color: #4596D1;
+    color: white;
+    cursor: pointer;
+}
+
+#assignment .icon:before {
+    font-size: 35px;
+    color: #DD574E;
+    border: 2px solid #3A4464;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.icon {
+    margin: 40px 120px;
+    background-color: white;
+    z-index: 1;
+}
+
+#assignment button {
+    position: relative;
+    left: 13%;
+    margin: 25px;
+}
+
+#normal {
+    opacity: 1;
+    position: relative;
+    top: 11px;
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+#download {
+    opacity: 0;
+    position: relative;
+    top: 25px;
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+#download span {
+    opacity: 0;
+    position: relative;
+    top: 25px;
+    font-size: 12px;
+    color: #ffffff;
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+#assignment button:hover #download {
+    opacity: 1;
+    top: -7px;
+}
+
+#assignment button:hover #download span{
+    opacity: 1;
+    top: 0px;
+}
+
+#assignment button:hover #normal {
+    top: -18px;
+    opacity: 0;
+}
+
+/*========== Past Winners ==========*/
+#pastWinners {
+    width: 100%;
+    min-height: 320px;
+    height: auto;
+    background-color: #0F9CD8;
+}
+
+/* cells will take up entire width of container */
+.gallery-cell {
+  width: 100%;
+  height: 320px;
+}
+
+#pastWinnersHeading {
+    padding-top: 0%;
+}
+
+#pastWinners {
+    /* padding-top: 40px;
+    padding-bottom: 40px; 
+    color: white; */
+}
+
+#pastWinners h2 {
+    color: white;
+}
+
+/* #pastWinners h3 {
+    padding: 30px 65px 10px;
+    text-align: center;
+    color: white;
+} */
+
+#pastWinners h3 {
+    text-align: center;
+    color: white;
+    top: 100px;
+    position: absolute;
+    margin-left: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: auto;
+    z-index: 100;
+}
+
+#pastWinners h3 span {
+    z-index: 1;
+    text-align: left;
+}
+
+#pastWinners h5 {
+    font-family: Avenir-Book;
+    line-height: 17px;
+    letter-spacing: .88px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+#pastWinners p {
+    font-family: Avenir-Book;
+    line-height: 17px;
+    letter-spacing: .88px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    top: 145px;
+    position: absolute;
+    width: 101%;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+#pastWinners p span {
+    color: #4596D1;
+}
+
+#pastWinners p span:hover {
+    background-color: #4596D1;
+    color: white;
+    cursor: pointer;
+}
+
+#pastWinners span:before {
+    font-size: 25px;
+    color: #F2FD5D;
+}
+
+.soloIcon {
+    background-color: none;
+}
+
+/*========== Submissions Section ==========*/
+#submissions {
+    min-height: 100%;
+}
+
+#submissionsHeading {
+    padding-top: 12%
+}
+
+.red {
+    color: red;
+}
+
+#submissionsHeading h5 {
+    font-family: Avenir-Book;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    line-height: 1.33em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* #darken {
+    display: inline;
+    background: black;
+    padding: 0;
+} */
+
+#thumb:hover img {
+    opacity: .3;
+}
+
+#submissionsContent img {
+    display:block;
+    margin:auto;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+/* Change <i> to <span> if you use .icon-heart icon from Assignments Section */ 
+#submissionsContent h3 i {
+    float: right;
+    cursor: pointer;
+    /* color: #D8D8D8; */
+    font-size: .8em;
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+#submissionsContent h3 i:hover {
+    float: right;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#submissionHover {
+    position: absolute;
+    left: 138px;
+    top: 89px;
+    opacity: 0;
+    transform: scale(1) ;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transition:All .4s ease;
+    -moz-transition:All .4s ease;
+    -o-transition:All .4s ease;
+}
+
+#submissionsContent #thumb:hover #submissionHover {
+    opacity: 1;
+    transform: scale(1.259) ;
+    -webkit-transform: scale(1.259);
+    -moz-transform: scale(1.259);
+    -o-transform: scale(1.259);
+    -ms-transform: scale(1.259);
+}
+
+#submissionsContent h3 {
+    margin: 10px 42.565px;
+}
+
+#submissions p {
+    margin: 10px 42.565px;
+    font-family: Avenir-Book;
+    font-size: 14px;
+    color: #5F5F5F;
+    letter-spacing: 0.87px;
+    line-height: 1.36em;
+}
+
+/*========== Modal Styles ==========*/
+#submissionsModal #formField {
+    padding-top: 0px;
+}
+#submissionsModal #formField h5{
+    padding-left: 0px;
+}
+#submissionsModal input:-moz-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    opacity: .8;
+}
+#submissionsModal input::-webkit-input-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    opacity: .8;
+}
+
+/*========== Form Section ==========*/
+#form {
+    width: 100%;
+    min-height: 900px;
+    height: auto;
+    padding-bottom: 200px;
+    background-color: #ffffff;
+}
+
+#form h4 {
+    padding-top: 35px;
+    padding-left: 20px;
+}
+
+#form button {
+    float: right;
+}
+
+#formField {
+    padding-top: 25px;
+}
+
+#formField h5 {
+    padding-left: 25px;
+    padding-bottom: 6px;
+}
+
+textarea, input:not([type=button]):not([type=submit]) {
+    width: 100%;
+    border: 1.5px solid #ABABAB;
+    padding: .5em 1em;
+    font-family: Avenir-Book;
+    font-size: 12px;
+}
+
+input[type=button], input[type=submit] {
+    cursor: pointer;
+    margin: 0;
+    padding: .5em 2em;
+    background: #0298b6;
+    border: none;
+    color: #fff;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#supportingDocuments {
+    padding-top: 20px;
+    text-align: left;
+}
+
+#supportingDocuments {
+    
+}
+
+#supportingDocuments h4{
+    padding-left: 0px;
+}
+
+#supportingDocuments h5 {
+    font-family: Avenir-Book;
+    line-height: 17px;
+    letter-spacing: .88px;
+    font-size: 14px;
+    text-align: left;
+    width: 80%;
+}
+
+#supportingDocuments span {
+    color: #4596D1;
+}
+
+form {
+  max-width: 1024px;
+  width: 60%;
+  padding-top: 34px;
+  margin: 0 auto;
+}
+
+:-moz-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    padding-left: 12px;
+    opacity: .8;
+}
+ 
+::-webkit-input-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    padding-left: 12px;
+    opacity: .8;
+}
+
+#form:focus, #formField:focus {outline: blue;}
+
+#form input:focus:invalid, #form textarea:focus:invalid {
+    /* background: #fff url(images/invalid.png) no-repeat 98% center; */
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+.launchTheIdea input {
+    font-family: NeutrafaceTextBook;
+    font-size: 16px;
+    color: #4596D1;
+    border: 2px solid #4596D1;
+    letter-spacing: 2px;
+    float: right;
+    height: 61px;
+    width: 204px;
+    background-color: transparent;
+    border-radius: 500px;
+    margin-top: 20px;
+    outline: 0 none;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+.launchTheIdea input:hover {
+    border: 2px solid #4596D1;
+    background-color: #4596D1;
+    color: white;
+}
+
+#launchButton {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: red;
+    border: 6px solid rgb(123, 0, 0);
+    -moz-box-shadow: inset 0 0 6px #000000;
+    -webkit-box-shadow: inset 0 0 6px #000000;
+    box-shadow: inset 0 0 6px #000000;
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+}
+
+#launchButton:hover {
+    background-color: rgb(244, 0, 0);
+    -moz-box-shadow: inset 0 0 4px #000000;
+    -webkit-box-shadow: inset 0 0 4px #000000;
+    box-shadow: inset 0 0 4px #000000;
+    border: 5px solid rgb(123, 0, 0);
+}
+
+/*========== Footer ==========*/
+footer {
+    width: 100%;
+    height: 194px;
+    background-color: #303030;
+}
+
+footer ul {
+  padding: 80px 0 10px;
+  position: relative; 
+  float: left; 
+  display: block; 
+  left: 50%;
+}
+
+footer li {
+    position: relative; 
+    float: left; 
+    display: block; 
+    right: 50%;
+    padding: 0 10px;
+}
+
+footer i {
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+.entypo-twitter-circled:hover {
+    color: #4099FF;
+}
+.entypo-instagrem:hover {
+    color: #C0AB96;
+}
+
+.entypo-facebook-circled:hover {
+    color: #007BB6;
+}
+
+footer p {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    clear: both;
+}
+
+/*========== Media Querries ==========*/
+
+@media (max-width: 1024px) {
+    #landingContent {
+        margin-top: 6%;
+        padding-left: 8%;
+    }
+    h1 {
+        margin-top: 30px;
+        font-size: 54px;
+        padding-left: 5px;
+    }
+    #landing p {
+    font-size: 20px;
+    }
+    #pastWinners h3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #pastWinners p {
+        width: 101%;
+        margin: 0 auto;
+    }
+    footer ul {
+        padding: 65px 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #landingContent {
+        margin: 120px 0 0 20px;
+    }
+    video {
+        display: none;
+    }
+    .mobileImage {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        background-size: cover;
+        display: inline;
+        z-index: 1;
+    }
+    h1 {
+        letter-spacing: 1.8px;
+        padding-left: 5px;
+        font-size: 64px;
+    }
+    #landing p {
+         font-size: 23px;
+    }
+    .scrollArrow {
+        left: 44%;
+    }
+    #assignmentHeading {
+        padding-top: 24%;
+    }
+    #assignment h3 {
+        padding: 0;
+        margin: 50px 0 0;
+        text-align: center;
+    }
+    #assignment h5 {
+        text-align: center;
+        padding: 10px 60px 0px 60px;
+    }
+    .bshadow0 {
+        text-align: center;
+    }
+    #assignmentContent p {
+        padding: 0 42px;
+        margin: 10px 0px 50px;
+        text-align: center;
+    }
+    #assignment button {
+        position: relative;
+        left: 20%;
+        margin: 10px;
+        clear: none;
+    }
+    /* #pastWinners h3{
+        font-size: 15px;
+    }
+    #pastWinners h5 {
+        padding: 10px 60px 0px 60px;
+    } */
+    #pastWinners h3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #pastWinners p {
+        width: 101%;
+        margin: 0 auto;
+    }
+    #submissions p {
+        margin: 10px 4.565px 60px;
+    }
+    #submissionsContent h3 {
+        margin: 10px 3.565px;
+    }
+    .icon {
+        margin: 40px 70px;
+    }
+    form {
+        width: 90%;
+        padding-top: 18px;
+    }
+    #submissionHeader {
+        text-align: center;
+        padding: 10px 120px 0px 120px;
+    }
+    #form #assignmentHeading {
+        padding-top: 14%;
+    }
+}
+
+@media (max-width: 767px) {
+    #assignment {
+        max-height: 1420px;
+        height: auto;
+    }
+    #hr {
+        display: none;
+    }
+    #landingContent {
+        margin: 20px 0 0 20px;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    #landing p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    #landingContent {
+        margin: 10px 0 0 20px;
+        padding-left: 0%;
+    }
+    h1 {
+        font-size: 25px;
+        padding: 0 10px 0;
+        margin-top: 30px;
+        letter-spacing: 1.5px;
+    }
+    #landing p {
+        font-size: 14px;
+        line-height: 1.6em;
+    }
+    .scrollArrow {
+        left: 39%;
+    }
+    #assignmentHeading {
+        padding-top: 24%;
+    }
+    #assignment h5 {
+        padding: 10px 80px 0px 80px;
+    }
+    #pastWinners {
+        margin-top: 20px;
+    }
+    #pastWinners h5 {
+        padding: 10px 80px 0px 80px;
+    }
+    #pastWinners h3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #pastWinners p {
+        width: 101%;
+        margin: 0 auto;
+    }
+    .gallery-cell img {
+        max-width: 208%;
+    }
+    #submissionsHeading {
+        padding-top: 34%;
+    }
+    #submissionsContent h3 {
+        margin: 10px 60.565px;
+    }
+    #submissions p {
+        margin: 10px 63.565px 40px;
+    }
+    #form h4 {
+        padding-left: 0px;
+    }
+    #form h5 {
+        padding-left: 0px;
+    }
+    :-moz-placeholder {
+    padding-left: 0px;
+    }
+     
+    ::-webkit-input-placeholder {
+        padding-left: 0px;
+    }
+    #submissionHeader {
+        text-align: center;
+        padding: 10px 80px 0px 80px;
+    }
+    footer ul {
+        padding: 55px 0 10px;
+        position: relative;
+        float: left;
+        display: block;
+        left: 50%;
+    }
+}
+
+/*========== <hr> Fixes ==========*/
+@media (max-width: 1000px) {
+    #hr {
+        width: 625px;
+    }
+}
+
+@media (max-width: 850px) {
+    #hr {
+        width: 525px;
+    }
+}

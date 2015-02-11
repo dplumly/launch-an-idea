@@ -515,44 +515,6 @@ hr {
     font-size: 1em;
 }
 
-/*==================== Radio Styles ====================
-input[type=radio   ]:not(old){
-  width     : 2em !important;
-  margin    : 0 !important;
-  padding   : 0 !important;
-  font-size : 1em !important;
-  opacity   : 0 !important;
-  cursor: pointer !important;
-}
-
-input[type=radio   ]:not(old) + label{
-  display      : inline-block;
-  margin-left  : -2em !important;
-  line-height  : 1.5em !important;
-}
-
-input[type=radio   ]:not(old) + label > a > i.entypo-heart {
-  -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-}
-
-input[type=radio   ]:not(old):checked + label > a > i.entypo-heart {
-  color: red !important;
-}
-
-#lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
-}*/
-
 #submissionHover {
     position: absolute;
     left: 138px;
@@ -588,9 +550,127 @@ input[type=radio   ]:not(old):checked + label > a > i.entypo-heart {
     color: #5F5F5F;
     letter-spacing: 0.87px;
     line-height: 1.36em;
+    padding-bottom: 40px;
 }
 
-/*========== Modal Styles ==========*/
+/*==================== Modal Styles ====================*/
+.heartContainer {
+    position: relative;
+    right: 32px;
+    top: -35px;
+}
+
+#submissionsModal {
+  outline: none;
+  width: 600px;
+  height: 300px;
+  background-color: #cccccc;
+  padding-bottom: 30px;
+}
+
+div.ui-dialog.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable {
+  margin: 0 auto !important;
+}
+
+a span.ui-icon.ui-icon-closethick {
+  visibility: visible;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: black;
+}
+
+a span.ui-icon.ui-icon-closethick:hover {
+    height: 200px;
+}
+
+#modalHeading {
+    padding-top: 12%;
+}
+
+#modalHeading h2 {
+    position: relative;
+    right: 180px;
+    font-family: Avenir-Black;
+}
+
+#modalHeading h5 {
+    position: relative;
+    left: 50px;
+    font-family: Avenir-Book;
+    font-size: 16px;
+    color: #4A4A4A;
+    letter-spacing: 0.33px;
+    line-height: 1.33em;
+    padding-bottom: 40px;
+}
+
+#submissionsModal #formField {
+    padding-top: 0px;
+    margin: 0 auto;
+    display: table;
+    width: 300px;
+}
+#submissionsModal #formField h5 {
+    padding-left: 0px;
+    text-align: center;
+}
+#submissionsModal input:-moz-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    opacity: .8;
+}
+#submissionsModal input::-webkit-input-placeholder {
+    font-family: Avenir-Book;
+    line-height: 16px;
+    letter-spacing: .33px;
+    font-size: 12px;
+    opacity: .8;
+}
+
+/*==================== Radio Styles ====================*/
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+  cursor: pointer;
+}
+
+input[type=radio   ]:not(old) + span {
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=radio   ]:not(old) + span.entypo-heart {
+  color: gray;
+  -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+input[type=radio   ]:not(old):checked + span.entypo-heart {
+  color: red;
+}
+
+/*
+#overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}*/
+
+/*========== Modal Styles ==========
 #submissionsModal #formField {
     padding-top: 0px;
 }
@@ -610,7 +690,7 @@ input[type=radio   ]:not(old):checked + label > a > i.entypo-heart {
     letter-spacing: .33px;
     font-size: 12px;
     opacity: .8;
-}
+}*/
 
 /*========== Form Section ==========*/
 #form {
@@ -771,12 +851,16 @@ form {
     border: 5px solid rgb(123, 0, 0);
 }
 
-/*========== Easter Egg ==========*/
+/*========== Easter Egg  Section ==========*/
 #easterEgg {
     max-width: 1024px;
     width: 60%;
     padding-top: 34px;
     margin: 0 auto;
+}
+
+#easterEgg h4 {
+    text-align: center;
 }
 
 #easterContent {
@@ -785,18 +869,16 @@ form {
     border-top: 1px solid #000;
 }
 
-.easterEgg {
-    cursor: pointer;
-}
+
+  
 
 .launchbtn {
     position: relative;
-    left: 15vw;
-    margin: 30px;
+    margin: 30px auto;
     width: 75px;
     height: 75px;
     border: 5px solid #9a9a9a;
-    display: inline-block;
+    display: table;
     background-color: #6c6161;
     -moz-border-radius: 75px;
     -webkit-border-radius: 75px;
@@ -811,6 +893,7 @@ form {
     -webkit-user-select: none;
     user-select: none;
     box-sizing: content-box!important;
+    cursor: pointer;
 }
 
 .launchbtn.launchColor {
@@ -1154,122 +1237,3 @@ footer p {
 
 
 
-
-
-
-
-
-
-
-
-#heartContainer {
-    position: relative;
-    right: 32px;
-    top: -35px;
-}
-
-
-#submissionsModal {
-  outline: none;
-  width: 600px;
-  height: 300px;
-  background-color: #cccccc;
-  padding-bottom: 30px;
-}
-
-div.ui-dialog.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable {
-  margin: 0 auto !important;
-}
-
-a span.ui-icon.ui-icon-closethick {
-  visibility: visible;
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  color: black;
-}
-
-a span.ui-icon.ui-icon-closethick:hover {
-    height: 200px;
-}
-
-/*a span.ui-icon.ui-icon-closethick span.entypo-cancel {
-  visibility: visible;
-  float: right;
-  padding: 10px;
-  color: black;
-}*/
-
-#modalHeading {
-    padding-top: 12%;
-}
-
-#modalHeading h3 {
-    position: relative;
-    left: 128.5px;
-    font-family: Avenir-Book;
-}
-
-#modalHeading h5 {
-    position: relative;
-    left: 50px;
-    font-family: Avenir-Book;
-    font-size: 16px;
-    color: #4A4A4A;
-    letter-spacing: 0.33px;
-    line-height: 1.33em;
-    padding-bottom: 40px;
-}
-
-#submissionsModal #formField {
-    padding-top: 0px;
-    margin: 0 auto;
-    display: table;
-    width: 300px;
-}
-#submissionsModal #formField h5 {
-    padding-left: 0px;
-    text-align: center;
-}
-#submissionsModal input:-moz-placeholder {
-    font-family: Avenir-Book;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
-#submissionsModal input::-webkit-input-placeholder {
-    font-family: Avenir-Book;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
-
-/*==================== Radio Styles ====================*/
-input[type=radio   ]:not(old){
-  width     : 2em;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-  cursor: pointer;
-}
-
-input[type=radio   ]:not(old) + span {
-  display      : inline-block;
-  margin-left  : -2em;
-  line-height  : 1.5em;
-}
-
-input[type=radio   ]:not(old) + span.entypo-heart {
-  color: gray;
-  -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-}
-
-input[type=radio   ]:not(old):checked + span.entypo-heart {
-  color: red;
-}

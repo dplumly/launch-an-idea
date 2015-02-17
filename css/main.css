@@ -564,7 +564,7 @@ hr {
   outline: none;
   width: 600px;
   height: 300px;
-  background-color: #cccccc;
+  background-color: #ffffff;
   padding-bottom: 30px;
 }
 
@@ -658,17 +658,14 @@ input[type=radio   ]:not(old):checked + span.entypo-heart {
   color: red;
 }
 
-/*
-#overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
+div.modal-bg { 
+    background:#000; 
+    position:fixed; 
+    top:0; left:0; 
+    width:100%; 
     height:100%;
-    width:100%;
-    background: #000;
     display: none;
-}*/
+}
 
 /*========== Modal Styles ==========
 #submissionsModal #formField {
@@ -868,9 +865,6 @@ form {
     padding-top: 20px;
     border-top: 1px solid #000;
 }
-
-
-  
 
 .launchbtn {
     position: relative;

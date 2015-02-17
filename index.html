@@ -254,14 +254,6 @@
 		</div><!-- end submissions -->
 
 
-
-
-
-
-
-
-
-
 		<div id="form">
 			<div id="assignmentHeading" class="row">
 				<h2>SUBMIT YOUR IDEA</h2>
@@ -297,13 +289,10 @@
 			  		<h5>Any other rationale on why we should vote for your idea? (200 characters or less )</h5>
 			    	<textarea id="textArea" placeholder="Including C.O.R.E. might increase your chances (wink wink, nudge nudge)." name="message" tabindex="5" rows="10" class="redacted" maxlength="200"></textarea>
 			  	</div>
-			  	<div id="formField">
-			  		<h5>The moment of truth...upload or backaway...( Under 25mb )</h5>
-			    	<input type="file" name="datafile" size="40" required>
-			  	</div>
+
 			  	<div id="formField">
 			  		<h5>Link to video if that's more convienent for you</h5>
-			    	<input type="text" placeholder="http://vimeo.com/yourvideoid" name="name" tabindex="1" class="redacted" required/>
+			    	<input type="text" placeholder="http://vimeo.com/yourvideoid" name="link" tabindex="1" class="redacted" required/>
 			  	</div>
 
 			  	<div id="supportingDocuments">
@@ -335,6 +324,8 @@
 				</div>
 			</div>
 
+			<div class="modal-bg"></div><!-- modal transparent background -->
+
 		<footer>
 			<ul>
 				<li><a href="https://twitter.com/TeamOneUSA" target="_blank"><i class='entypo-twitter-circled'></i></a></li>
@@ -362,9 +353,9 @@
 		<!--<script type="text/javascript" src="js/leanModal.min.js"></script>-->
 
 
-
+		<!-- modal popup -->
 		<div id="submissionsModal" style="display: none;">
-			<span id="reset" class="ui-icon ui-icon-closethick"><!--<span class="entypo-cancel"></span>--></span>
+			<span id="reset" class="ui-icon ui-icon-closethick"></span>
 				<div id="modalHeading" class="row">
 				<h2>YOU LIKE THIS ONE?</h2>
 				<h5 class="five columns">Please enter your Team One e-mail address to submit your vote. Remember, you have <span>ONE</span> vote. Use it wisely.</h5>
@@ -378,26 +369,30 @@
 			</div>
 		</div>
 
-
+		<!-- makes modal go away -->
 	    <script>
 	    	 $('#submissionsModal').bind('dialogclose', function hearts(event) {
+				    $('div.modal-bg').fadeTo("slow", 0);
+				    $('div.modal-bg').hide();
 				    $('input:radio:checked').attr('checked', false);
 				 })
 	    </script>
 
-
+	    <!-- modal window script -->
 		<script>
 			$(function hearts() {
 			  $("input:radio").change(function() {
 			    var selectedValue = $("input:radio:checked").val();
 			    if(selectedValue === "heart") {
+			    $("div.modal-bg").fadeTo("slow", .5);
 			     $("#submissionsModal").dialog({
 			        modal: true,
 			        minHeight: 400,
 			        minWidth: 400,
 			        title: "",
 			        closeText: "X",
-			        closeOnEscape: true
+			        closeOnEscape: true,
+			        show: { effect: "fade", duration: 800 }
 			      });
 			    }
 			  });
@@ -453,7 +448,7 @@
             })();
         </script>
 
-		<!-- Scroll Arrow ScrollTo -->
+		<!-- Scroll Arrow ScrollTo 
 		<script>
 			$(function() {
 			  $('.scrollArrow a').click(function() {
@@ -474,7 +469,7 @@
 		<!-- Submit DIV ScrollTo -->
 		<script>
 			$(function() {
-			  $('.launchTheIdea a').click(function() {
+			  $('.launchTheIdea a, .scrollSubmit a, .scrollArrow a').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			      var target = $(this.hash);
 			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -489,7 +484,7 @@
 			});
 	    </script>
 
-	    <!-- Landing Page ScrollTo -->
+	    <!-- Landing Page ScrollTo 
 	    <script>
 			$(function() {
 			  $('.scrollSubmit a').click(function() {
@@ -574,8 +569,8 @@
     
         <img id="duckHuntDog" style="display: block; position: fixed; bottom: -700px; right: 1200px;" src="easterEgg/easterEgg.gif">
         <audio style="visibility:hidden;" id="perfectScore" preload="auto">
-            <!--<source src="perfectScore.mp3">
-            <source src="perfectScore.ogg">-->
+            <source src="easterEgg/easterEgg.mp3">
+            <source src="easterEgg/easterEgg.ogg">
         </audio>
 		
 	</body>

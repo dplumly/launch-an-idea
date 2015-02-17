@@ -30,7 +30,7 @@
 			
 			//Dog Vars
 			var raptorImageMarkup = '<img id="duckHuntDog" style="display: none" src="easterEgg/easterEgg.gif" />'
-			var raptorAudioMarkup = '<audio id="dogLaugh" preload="auto"><source src="perfectScore.mp3" /><source src="js/perfectScore.ogg" /></audio>';	
+			var raptorAudioMarkup = '<audio id="dogLaugh" preload="auto"><source src="easterEgg/easterEgg.mp3" /><source src="easterEgg/easterEgg.ogg" /></audio>';	
 			var locked = false;
 			
 			//Append Dog and Style

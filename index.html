@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="fonts/avenir/avenir.css"> 
+		<!--<link rel='stylesheet' id='avenir-css'  href='http://teamone-usa.com/wp-content/themes/Foundation/css/fonts.css?ver=3.8.1' type='text/css' media='all' />-->
 		<link rel="stylesheet" href="css/gallery.css"> 
 		<link rel="stylesheet" href="css/flickity.css" media="screen">
 		<link rel="stylesheet" href="css/grid.css">
@@ -31,7 +33,7 @@
 					<!-- Background Video -->
 					<video autoplay="on" loop="on" muted>
 					  	<source src="img/test1.mp4" type="video/mp4">
-					  	<source src="img/video.webm" type="video/webm">
+					  	<source src="img/test1.webm" type="video/webm">
 					  	<img src="img/video.jpg" title="Your browser does not support the <video> tag">
 					</video>
 
@@ -261,7 +263,7 @@
 				<h5 class="six columns centered">Please fill in the <span>6 simple questions</span> fields below. Choose your answers wisely. </h5>
 			</div>
 
-			<form method="post" action="index.php">
+			<form method="post" action="email.php">
 			  	<h4>THE IDEA</h4>
 			  	<div id="formField">
 			  		<h5>Idea Name *</h5>
@@ -291,17 +293,17 @@
 			  	</div>
 
 			  	<div id="formField">
-			  		<h5>Link to video if that's more convienent for you</h5>
+			  		<h5>Link to video</h5>
 			    	<input type="text" placeholder="http://vimeo.com/yourvideoid" name="link" tabindex="1" class="redacted" required/>
 			  	</div>
 
 			  	<div id="supportingDocuments">
 					<h4>SUPPORTING DOCUMENTS</h4>
-					<h5>If you have further comments, please e-mail <a href="mailto:youremailaddress?subject=Launch An Idea Entry"><span>Nairey Keshishian</span></a> and be sure to check out the <a href="img/PDF/LAI FAQs.pdf" download="Launch an Idea FAQs"><span>FAQs</span></a> and <a href="img/PDF/Launch an Idea 2015_FINAL.pdf" download="Launch an Idea 2015"><span>the fine print</span></a> Luanch An Idea details.</h5>
+					<h5>If you have further comments, please e-mail <a href="mailto:youremailaddress?subject=Launch An Idea Entry"><span>Nairey Keshishian</span></a> and be sure to check out the <a href="img/PDF/LAI FAQs.pdf" download="Launch an Idea FAQs"><span>FAQs</span></a> and <a href="img/PDF/Launch an Idea 2015_FINAL.pdf" download="Launch an Idea 2015"><span>the fine print</span></a> Launch An Idea details.</h5>
 			  	</div>
 
 			  	<div id="formField" class="launchTheIdea">
-			    	<input type="submit" value="SUBMIT">
+			    	<input type="submit" name="submit" value="SUBMIT">
 			  	</div>
 			</form><!-- end form -->
 		</div><!-- end form section-->

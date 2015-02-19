@@ -29,7 +29,7 @@ a {
 }
 
 h1 {
-  font-family: Avenir-Heavy;
+  font-family: 'AvenirLTStd-Heavy', helvetica;
   font-size: 60px;
   color: #FFFFFF;
   letter-spacing: 2px;
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-family: Avenir-Black;
+  font-family: 'AvenirLTStd-Black', helvetica;
   font-size: 34px;
   color: #5F5F5F;
   letter-spacing: 0.94px;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-family: Avenir-Black;
+  font-family: 'AvenirLTStd-Black', helvetica;
   font-size: 18px;
   color: #5F5F5F;
   letter-spacing: 0.5px;
@@ -55,7 +55,7 @@ h3 {
 }
 
 h4 {
-  font-family: Avenir-Black;
+  font-family: 'AvenirLTStd-Black', helvetica;
   font-size: 22px;
   color: #5F5F5F;
   letter-spacing: 0.61px;
@@ -63,15 +63,19 @@ h4 {
 }
 
 h5 {
-  font-family: Avenir-Book;
+  font-family: 'AvenirLTStd-Book', helvetica;
   font-size: 12px;
   color: #4A4A4A;
   letter-spacing: 0.33px;
   line-height: 1.33em;
 }
 
+p {
+    font-family: 'AvenirLTStd-Book', helvetica;
+}
+
 button {
-    font-family: NeutrafaceTextBook;
+    font-family: 'AvenirLTStd-Book', helvetica;
     font-size: 16px;
     color: #4596D1;
     border: 2px solid #4596D1;
@@ -172,7 +176,6 @@ p { margin: $spacing 0; padding: 0; }
 }
 
 #landing p {
-  font-family: Avenir-Medium;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0.87px;
@@ -204,7 +207,7 @@ p { margin: $spacing 0; padding: 0; }
 
 .scrollArrow a {
     color: white;
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     font-size: 12px;
 }
 
@@ -260,7 +263,6 @@ hr {
 }
 
 #assignment h5 {
-    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -268,7 +270,6 @@ hr {
 }
 
 #assignmentHeading h5 {
-    font-family: Avenir-Book;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
@@ -284,7 +285,6 @@ hr {
 
 #assignmentContent p {
     padding: 0 40px;
-    font-family: Avenir-Book;
     line-height: 19px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -417,7 +417,6 @@ hr {
 }
 
 #pastWinners h5 {
-    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -426,7 +425,6 @@ hr {
 }
 
 #pastWinners p {
-    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -472,7 +470,6 @@ hr {
 }*/
 
 #submissionsHeading h5 {
-    font-family: Avenir-Book;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
@@ -545,7 +542,6 @@ hr {
 
 #submissions p {
     margin: -30px 42.565px;
-    font-family: Avenir-Book;
     font-size: 14px;
     color: #5F5F5F;
     letter-spacing: 0.87px;
@@ -591,13 +587,11 @@ a span.ui-icon.ui-icon-closethick:hover {
 #modalHeading h2 {
     position: relative;
     right: 180px;
-    font-family: Avenir-Black;
 }
 
 #modalHeading h5 {
     position: relative;
     left: 50px;
-    font-family: Avenir-Book;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
@@ -616,14 +610,14 @@ a span.ui-icon.ui-icon-closethick:hover {
     text-align: center;
 }
 #submissionsModal input:-moz-placeholder {
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
     opacity: .8;
 }
 #submissionsModal input::-webkit-input-placeholder {
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
@@ -720,7 +714,7 @@ textarea, input:not([type=button]):not([type=submit]) {
     width: 100%;
     border: 1.5px solid #ABABAB;
     padding: .5em 1em;
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     font-size: 12px;
 }
 
@@ -757,7 +751,6 @@ input[type=button], input[type=submit] {
 }
 
 #supportingDocuments h5 {
-    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -777,7 +770,7 @@ form {
 }
 
 :-moz-placeholder {
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
@@ -786,7 +779,7 @@ form {
 }
  
 ::-webkit-input-placeholder {
-    font-family: Avenir-Book;
+    font-family: 'AvenirLTStd-Book', helvetica;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
@@ -803,7 +796,7 @@ form {
 }
 
 .launchTheIdea input {
-    font-family: NeutrafaceTextBook;
+    font-family: 'AvenirLTStd-Book', helvetica;
     font-size: 16px;
     color: #4596D1;
     border: 2px solid #4596D1;
@@ -985,7 +978,6 @@ footer i {
 }
 
 footer p {
-    font-family: Avenir-Book;
     line-height: 16px;
     text-align: center;
     font-size: 12px;
@@ -1163,6 +1155,9 @@ footer p {
     }
     #assignment h5 {
         padding: 10px 80px 0px 80px;
+    }
+    #assignment button {
+        left: 14%;
     }
     #pastWinners {
         margin-top: 20px;

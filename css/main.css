@@ -29,7 +29,7 @@ a {
 }
 
 h1 {
-  font-family: 'AvenirLTStd-Heavy', helvetica;
+  font-family: Avenir-Heavy;
   font-size: 60px;
   color: #FFFFFF;
   letter-spacing: 2px;
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'AvenirLTStd-Black', helvetica;
+  font-family: Avenir-Black;
   font-size: 34px;
   color: #5F5F5F;
   letter-spacing: 0.94px;
@@ -47,7 +47,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'AvenirLTStd-Black', helvetica;
+  font-family: Avenir-Black;
   font-size: 18px;
   color: #5F5F5F;
   letter-spacing: 0.5px;
@@ -55,7 +55,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'AvenirLTStd-Black', helvetica;
+  font-family: Avenir-Black;
   font-size: 22px;
   color: #5F5F5F;
   letter-spacing: 0.61px;
@@ -63,19 +63,15 @@ h4 {
 }
 
 h5 {
-  font-family: 'AvenirLTStd-Book', helvetica;
+  font-family: Avenir-Book;
   font-size: 12px;
   color: #4A4A4A;
   letter-spacing: 0.33px;
   line-height: 1.33em;
 }
 
-p {
-    font-family: 'AvenirLTStd-Book', helvetica;
-}
-
 button {
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: NeutrafaceTextBook;
     font-size: 16px;
     color: #4596D1;
     border: 2px solid #4596D1;
@@ -98,6 +94,22 @@ button:hover {
     color: white;
 }
 
+#assignmentHeading hr {
+    border: 1px #D1DE23 solid;
+    position: relative;
+    top: 0px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+#submissionsHeading hr {
+    border: 1px #D1DE23 solid;
+    position: relative;
+    top: 0px;
+    width: 80px;
+    margin: 0 auto;
+}
+
 /*========== Hidden Section ==========*/
 
 #thanks {
@@ -112,10 +124,9 @@ button:hover {
     /*position: relative;*/
     min-height: 100%;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #7c7c7c;
 }
 
 video {
@@ -125,7 +136,7 @@ video {
     min-height: 100%;
     width: auto; 
     height: auto; 
-    z-index: 0;
+    z-index: -100;
     background-size: cover;
 }
 
@@ -157,16 +168,10 @@ p { margin: $spacing 0; padding: 0; }
   animation: caret 500ms infinite;
 }
 
-#landingContent {
-    margin-top: 5vw;
-    z-index: 1;
-}
-
 #landing button {
   float: left;
   clear: both;
   margin-left: 10px;
-  color: white
 }
 
 #landing button:hover {
@@ -175,7 +180,12 @@ p { margin: $spacing 0; padding: 0; }
     color: white;
 }
 
+#landingContent {
+    margin-top: 5vw;
+}
+
 #landing p {
+  font-family: Avenir-Medium;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0.87px;
@@ -207,7 +217,7 @@ p { margin: $spacing 0; padding: 0; }
 
 .scrollArrow a {
     color: white;
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: Avenir-Book;
     font-size: 12px;
 }
 
@@ -225,23 +235,7 @@ p { margin: $spacing 0; padding: 0; }
 }
 
 #assignmentHeading {
-    padding-top: 12%;
-}
-
-#assignmentHeading hr {
-    border: 1px #D1DE23 solid;
-    position: relative;
-    top: 0px;
-    width: 80px;
-    margin: 0 auto;
-}
-
-#submissionsHeading hr {
-    border: 1px #D1DE23 solid;
-    position: relative;
-    top: 0px;
-    width: 80px;
-    margin: 0 auto;
+    padding-top: 8%;
 }
 
 #assignmentContent {
@@ -263,6 +257,7 @@ hr {
 }
 
 #assignment h5 {
+    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -270,6 +265,7 @@ hr {
 }
 
 #assignmentHeading h5 {
+    font-family: Avenir-Book;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
@@ -277,7 +273,7 @@ hr {
     text-align: center;
     padding-bottom: 40px;
 }
-
+}
 
 #assignmentHeading h5 span {
     color: #4596D1;
@@ -285,6 +281,7 @@ hr {
 
 #assignmentContent p {
     padding: 0 40px;
+    font-family: Avenir-Book;
     line-height: 19px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -417,6 +414,7 @@ hr {
 }
 
 #pastWinners h5 {
+    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -425,6 +423,7 @@ hr {
 }
 
 #pastWinners p {
+    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -459,17 +458,20 @@ hr {
 /*========== Submissions Section ==========*/
 #submissions {
     min-height: 100%;
+    border-bottom: 1px dotted;
+    padding-bottom: 30px;
 }
 
 #submissionsHeading {
     padding-top: 12%
 }
 
-/*.like {
+.red {
     color: red;
-}*/
+}
 
 #submissionsHeading h5 {
+    font-family: Avenir-Book;
     font-size: 16px;
     color: #4A4A4A;
     letter-spacing: 0.33px;
@@ -496,10 +498,11 @@ hr {
     -o-transition:All .2s ease;
 }
 
-/* Change <i> to <span> if you use .icon-heart icon from Assignments Section */
+/* Change <i> to <span> if you use .icon-heart icon from Assignments Section */ 
 #submissionsContent h3 i {
     float: right;
     cursor: pointer;
+    /* color: #D8D8D8; */
     font-size: .8em;
     -webkit-transition:All .4s ease;
     -moz-transition:All .4s ease;
@@ -541,127 +544,15 @@ hr {
 }
 
 #submissions p {
-    margin: -30px 42.565px;
+    margin: 10px 42.565px;
+    font-family: Avenir-Book;
     font-size: 14px;
     color: #5F5F5F;
     letter-spacing: 0.87px;
     line-height: 1.36em;
-    padding-bottom: 40px;
 }
 
-/*==================== Modal Styles ====================*/
-.heartContainer {
-    position: relative;
-    right: 32px;
-    top: -35px;
-}
-
-#submissionsModal {
-  outline: none;
-  width: 600px;
-  height: 300px;
-  background-color: #ffffff;
-  padding-bottom: 30px;
-}
-
-div.ui-dialog.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable {
-  margin: 0 auto !important;
-}
-
-a span.ui-icon.ui-icon-closethick {
-  visibility: visible;
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  color: black;
-}
-
-a span.ui-icon.ui-icon-closethick:hover {
-    height: 200px;
-}
-
-#modalHeading {
-    padding-top: 12%;
-}
-
-#modalHeading h2 {
-    position: relative;
-    right: 180px;
-}
-
-#modalHeading h5 {
-    position: relative;
-    left: 50px;
-    font-size: 16px;
-    color: #4A4A4A;
-    letter-spacing: 0.33px;
-    line-height: 1.33em;
-    padding-bottom: 40px;
-}
-
-#submissionsModal #formField {
-    padding-top: 0px;
-    margin: 0 auto;
-    display: table;
-    width: 300px;
-}
-#submissionsModal #formField h5 {
-    padding-left: 0px;
-    text-align: center;
-}
-#submissionsModal input:-moz-placeholder {
-    font-family: 'AvenirLTStd-Book', helvetica;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
-#submissionsModal input::-webkit-input-placeholder {
-    font-family: 'AvenirLTStd-Book', helvetica;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
-
-/*==================== Radio Styles ====================*/
-input[type=radio   ]:not(old){
-  width     : 2em;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-  cursor: pointer;
-}
-
-input[type=radio   ]:not(old) + span {
-  display      : inline-block;
-  margin-left  : -2em;
-  line-height  : 1.5em;
-}
-
-input[type=radio   ]:not(old) + span.entypo-heart {
-  color: gray;
-  -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-}
-
-input[type=radio   ]:not(old):checked + span.entypo-heart {
-  color: red;
-}
-
-div.modal-bg { 
-    background:#000; 
-    position:fixed; 
-    top:0; left:0; 
-    width:100%; 
-    height:100%;
-    display: none;
-}
-
-/*========== Modal Styles ==========
+/*========== Modal Styles ==========*/
 #submissionsModal #formField {
     padding-top: 0px;
 }
@@ -681,9 +572,102 @@ div.modal-bg {
     letter-spacing: .33px;
     font-size: 12px;
     opacity: .8;
-}*/
+}
 
-/*========== Form Section ==========*/
+/*========== Voting Section ==========*/
+#voting { min-height: 65%; padding-bottom: 50px; }
+
+#votingContent {
+    padding-top: 5%;
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+}
+
+#votingContent hr {
+    border: 1px #D1DE23 solid;
+    position: relative;
+    top: 0px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+#votingContent form { 
+    max-width: 1024px;
+    width: 60%;
+    padding-top: 34px;
+    margin: 0 auto;
+}
+
+#votingContent h4 {
+    padding-top: 35px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+#votingContent form input {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+}
+
+#voting button {
+    float: right;
+}
+
+#formField {
+    padding-top: 25px;
+}
+
+#formField h5 {
+    padding-left: 25px;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+
+textarea, input:not([type=button]):not([type=submit]) {
+    width: 100%;
+    border: 1.5px solid #ABABAB;
+    padding: .5em 1em;
+    font-family: Avenir-Book;
+    font-size: 12px;
+}
+
+input[type=button], input[type=submit] {
+    cursor: pointer;
+    margin: 0;
+    padding: .5em 2em;
+    background: #0298b6;
+    border: none;
+    color: #fff;
+}
+
+.launchTheIdea input {
+    font-family: NeutrafaceTextBook;
+    font-size: 16px;
+    color: #4596D1;
+    border: 2px solid #4596D1;
+    letter-spacing: 2px;
+    float: right;
+    height: 61px !important;
+    width: 204px !important;
+    background-color: transparent;
+    border-radius: 500px;
+    margin-top: 20px;
+    outline: 0 none;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
+
+.launchTheIdea input:hover {
+    border: 2px solid #4596D1;
+    background-color: #4596D1;
+    color: white;
+}
+
+/*========== Form Section ==========
 #form {
     width: 100%;
     min-height: 900px;
@@ -714,7 +698,7 @@ textarea, input:not([type=button]):not([type=submit]) {
     width: 100%;
     border: 1.5px solid #ABABAB;
     padding: .5em 1em;
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: Avenir-Book;
     font-size: 12px;
 }
 
@@ -746,11 +730,16 @@ input[type=button], input[type=submit] {
     text-align: left;
 }
 
+#supportingDocuments {
+    
+}
+
 #supportingDocuments h4{
     padding-left: 0px;
 }
 
 #supportingDocuments h5 {
+    font-family: Avenir-Book;
     line-height: 17px;
     letter-spacing: .88px;
     font-size: 14px;
@@ -770,7 +759,7 @@ form {
 }
 
 :-moz-placeholder {
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: Avenir-Book;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
@@ -779,7 +768,7 @@ form {
 }
  
 ::-webkit-input-placeholder {
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: Avenir-Book;
     line-height: 16px;
     letter-spacing: .33px;
     font-size: 12px;
@@ -791,12 +780,12 @@ form {
 
 #form input:focus:invalid, #form textarea:focus:invalid {
     /* background: #fff url(images/invalid.png) no-repeat 98% center; */
-    box-shadow: 0 0 5px #d45252;
+    /*box-shadow: 0 0 5px #d45252;
     border-color: #b03535
 }
 
 .launchTheIdea input {
-    font-family: 'AvenirLTStd-Book', helvetica;
+    font-family: NeutrafaceTextBook;
     font-size: 16px;
     color: #4596D1;
     border: 2px solid #4596D1;
@@ -818,122 +807,6 @@ form {
     background-color: #4596D1;
     color: white;
 }
-
-#launchButton {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: red;
-    border: 6px solid rgb(123, 0, 0);
-    -moz-box-shadow: inset 0 0 6px #000000;
-    -webkit-box-shadow: inset 0 0 6px #000000;
-    box-shadow: inset 0 0 6px #000000;
-    -webkit-transition:All .5s ease;
-    -moz-transition:All .5s ease;
-    -o-transition:All .5s ease;
-}
-
-#launchButton:hover {
-    background-color: rgb(244, 0, 0);
-    -moz-box-shadow: inset 0 0 4px #000000;
-    -webkit-box-shadow: inset 0 0 4px #000000;
-    box-shadow: inset 0 0 4px #000000;
-    border: 5px solid rgb(123, 0, 0);
-}
-
-/*========== Easter Egg  Section ==========*/
-#easterEgg {
-    max-width: 1024px;
-    width: 60%;
-    padding-top: 34px;
-    margin: 0 auto;
-}
-
-#easterEgg h4 {
-    text-align: center;
-}
-
-#easterContent {
-    padding: 0;
-    padding-top: 20px;
-    border-top: 1px solid #000;
-}
-
-.launchbtn {
-    position: relative;
-    margin: 30px auto;
-    width: 75px;
-    height: 75px;
-    border: 5px solid #9a9a9a;
-    display: table;
-    background-color: #6c6161;
-    -moz-border-radius: 75px;
-    -webkit-border-radius: 75px;
-    border-radius: 75px;
-    -moz-transition: all 35ms linear;
-    -o-transition: all 35ms linear;
-    -webkit-transition: all 35ms linear;
-    transition: all 35ms linear;
-    -ms-transition: all 35ms linear;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    box-sizing: content-box!important;
-    cursor: pointer;
-}
-
-.launchbtn.launchColor {
-  border: 5px solid #e74c3c;
-  background-color: #c0392b;
-}
-
-.launchbtn .inner {
-  position: relative;
-  width: 75px;
-  height: 75px;
-  background-color: #9a9a9a;
-  margin-top: -8px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -moz-transition: margin 35ms 35ms linear, box-shadow 35ms linear;
-  -o-transition: margin 35ms 35ms linear, box-shadow 35ms linear;
-  -webkit-transition: margin 35ms 35ms, box-shadow 35ms linear;
-  -webkit-transition-delay: linear, 0s;
-  transition: margin 35ms 35ms linear, box-shadow 35ms linear;
-  -ms-transition: margin 35ms 35ms linear, box-shadow 35ms linear;
-}
-
-.launchbtn.launchColor .inner {
-  background-color: #e74c3c;
-}
-
-.launchbtn:active .inner {
-  margin-top: 0;
-  -moz-box-shadow: #6c6161 0 8px 0 inset;
-  -webkit-box-shadow: #6c6161 0 8px 0 inset;
-  box-shadow: #6c6161 0 8px 0 inset;
-  -moz-transition: margin 35ms linear, box-shadow 17.5ms 17.5ms linear;
-  -o-transition: margin 35ms linear, box-shadow 17.5ms 17.5ms linear;
-  -webkit-transition: margin 35ms linear, box-shadow 17.5ms 17.5ms;
-  -webkit-transition-delay: 0s, linear;
-  transition: margin 35ms linear, box-shadow 17.5ms 17.5ms linear;
-  -ms-transition: margin 35ms linear, box-shadow 17.5ms 17.5ms linear;
-}
-
-.launchbtn:active.launchColor .inner {
-  -moz-box-shadow: #c0392b 0 8px 0 inset;
-  -webkit-box-shadow: #c0392b 0 8px 0 inset;
-  box-shadow: #c0392b 0 8px 0 inset;
-}
-
 
 /*========== Footer ==========*/
 footer {
@@ -978,6 +851,7 @@ footer i {
 }
 
 footer p {
+    font-family: Avenir-Book;
     line-height: 16px;
     text-align: center;
     font-size: 12px;
@@ -1028,6 +902,7 @@ footer p {
         min-height: 100%;
         width: auto;
         height: auto;
+        z-index: -100;
         background-size: cover;
         display: inline;
     }
@@ -1088,15 +963,6 @@ footer p {
     #submissionsContent h3 {
         margin: 10px 3.565px;
     }
-    #submissionHover {
-        display: none;
-    }
-    #submissionsContent #thumb:hover #submissionHover {
-        display: none;
-    }
-    #thumb:hover img {
-        opacity: 1;
-    }
     .icon {
         margin: 40px 70px;
     }
@@ -1156,9 +1022,6 @@ footer p {
     #assignment h5 {
         padding: 10px 80px 0px 80px;
     }
-    #assignment button {
-        left: 14%;
-    }
     #pastWinners {
         margin-top: 20px;
     }
@@ -1180,10 +1043,10 @@ footer p {
         padding-top: 34%;
     }
     #submissionsContent h3 {
-        margin: 10px 70px;
+        margin: 10px 60.565px;
     }
     #submissions p {
-        margin: 10px 60px 40px;
+        margin: 10px 63.565px 40px;
     }
     #form h4 {
         padding-left: 0px;
@@ -1223,6 +1086,3 @@ footer p {
         width: 525px;
     }
 }
-
-
-

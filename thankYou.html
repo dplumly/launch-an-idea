@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		img { 
+			margin: 0 auto;
+			display: table;
+		}
+		h1 {
+		  display: table;
+		  font-family: 'AvenirLTStd-Heavy', helvetica;
+		  font-size: 60px;
+		  color: #5F5F5F;
+		  letter-spacing: 1px;
+		  line-height: 1.02em;
+		  margin: 50px auto;
+		}
+
+		button {
+		    font-family: 'AvenirLTStd-Book', helvetica;
+		    font-size: 16px;
+		    color: #4596D1;
+		    border: 2px solid #4596D1;
+		    letter-spacing: 2px;
+		    /*line-height: 1.19em;*/
+		    height: 61px;
+		    width: 204px;
+		    background-color: transparent;
+		    border-radius: 500px;
+		    margin-top: 20px;
+		    outline: 0 none;
+		    cursor: pointer;
+		    -webkit-transition:All .2s ease;
+		    -moz-transition:All .2s ease;
+		    -o-transition:All .2s ease;
+		}
+
+		button:hover {
+		    border: 2px solid #4596D1;
+		    background-color: #4596D1;
+		    color: white;
+		}
+
+		a {
+		    text-decoration: none;
+		    outline: 0 none;
+		    margin: 0 auto;
+		    display: table;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="example1">THANK YOU!</h1>
+	<img src="easterEgg/easterEgg.gif" alt="You are using IE9 of some other archaic browser. Sorry, no image for you.">
+	<a href="index.html"><button>BACK HOME</button></a>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			var $headline = $('#headline').hide();
+		
+			var $word1		= $('#arc-wrapper').find('h3').hide();
+			var $word2		= $('#arc-wrapper').find('h4').hide();
+			
+			var $example1	= $('#example1').hide();
+			var $example2	= $('#example2').hide();
+			var $example3	= $('#example3').hide();
+			var $example4	= $('#example4').hide();
+			
+			google.load('webfont','1');
+			
+			google.setOnLoadCallback(function() {
+				WebFont.load({
+					google		: {
+						families	: ['Montserrat','Concert One']
+					},
+					fontactive	: function(fontFamily, fontDescription) {
+						init();
+					},
+					fontinactive	: function(fontFamily, fontDescription) {
+						init();
+					}
+				});
+			});
+			
+			function init() {
+			
+				$headline.show().arctext({radius: 400});
+					
+				$word1.show().arctext();
+				$word2.show().arctext({radius: 148, dir: -1});
+				
+				$example1.show().arctext({radius: 300});
+				$example2.show().arctext({radius: 400, dir: -1});
+				$example3.show().arctext({radius: 500, rotate: false});
+				$example4.show().arctext({radius: 300});
+				
+				$('#button_set').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 140,
+						dir			: -1
+					});
+					return false;
+				});
+				$('#button_anim1').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 300, 
+						dir			: -1,
+						animation	: {
+							speed	: 300,
+							easing  : 'ease-out'
+						}
+					});
+					return false;
+				});
+				$('#button_anim2').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 200, 
+						dir			: 1, 
+						animation	: {
+							speed	: 300
+						}
+					});
+					return false;
+				});
+				$('#button_reset').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 300, 
+						dir			: 1
+					});
+					return false;
+				});
+			
+			};
+		</script/>
+</body>
+</html>

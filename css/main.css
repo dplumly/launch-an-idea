@@ -144,7 +144,7 @@ video {
     display: none;
 }
 
-p { margin: $spacing 0; padding: 0; }
+p { margin: 0; padding: 0; }
 
 @keyframes caret {
   0%, 100% { opacity: 1; }
@@ -466,10 +466,6 @@ hr {
     padding-top: 12%
 }
 
-.red {
-    color: red;
-}
-
 #submissionsHeading h5 {
     font-family: Avenir-Book;
     font-size: 16px;
@@ -480,15 +476,11 @@ hr {
     padding-bottom: 40px;
 }
 
-/* #darken {
-    display: inline;
-    background: black;
-    padding: 0;
-} */
-
 #thumb:hover img {
     opacity: .3;
 }
+
+#submissionsContent #thumb { padding-bottom: 40px;}
 
 #submissionsContent img {
     display:block;
@@ -498,11 +490,11 @@ hr {
     -o-transition:All .2s ease;
 }
 
-/* Change <i> to <span> if you use .icon-heart icon from Assignments Section */ 
+/* Change <i> to <span> if you use .icon-heart icon from Assignments Section *
 #submissionsContent h3 i {
     float: right;
     cursor: pointer;
-    /* color: #D8D8D8; */
+    /* color: #D8D8D8; 
     font-size: .8em;
     -webkit-transition:All .4s ease;
     -moz-transition:All .4s ease;
@@ -513,7 +505,7 @@ hr {
     float: right;
     cursor: pointer;
     font-size: 1em;
-}
+}*/
 
 #submissionHover {
     position: absolute;
@@ -539,40 +531,17 @@ hr {
     -ms-transform: scale(1.259);
 }
 
-#submissionsContent h3 {
-    margin: 10px 42.565px;
-}
-
 #submissions p {
-    margin: 10px 42.565px;
+    margin: 10px 42px;
     font-family: Avenir-Book;
     font-size: 14px;
     color: #5F5F5F;
     letter-spacing: 0.87px;
     line-height: 1.36em;
+    overflow: hidden;
 }
 
-/*========== Modal Styles ==========*/
-#submissionsModal #formField {
-    padding-top: 0px;
-}
-#submissionsModal #formField h5{
-    padding-left: 0px;
-}
-#submissionsModal input:-moz-placeholder {
-    font-family: Avenir-Book;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
-#submissionsModal input::-webkit-input-placeholder {
-    font-family: Avenir-Book;
-    line-height: 16px;
-    letter-spacing: .33px;
-    font-size: 12px;
-    opacity: .8;
-}
+#submissionsContent h3 { text-transform: uppercase; font-size: 14px; margin: 10px 42px; }
 
 /*========== Voting Section ==========*/
 #voting { min-height: 65%; padding-bottom: 50px; }
